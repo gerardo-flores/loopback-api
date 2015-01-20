@@ -1,11 +1,14 @@
 {
-  "name": "CoffeeShop",
+  "name": "Task",
   "base": "PersistedModel",
   "idInjection": true,
   "properties": {
     "name": {
       "type": "string",
       "required": true
+    },
+    "dueDate": {
+      "type": "date"
     }
   },
   "validations": [],

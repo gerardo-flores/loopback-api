@@ -1,15 +1,15 @@
 module.exports = function(app) {
-  app.dataSources.mysqlDs.automigrate('CoffeeShop', function(err) {
+  app.dataSources.mysqlDs.automigrate('Task', function(err) {
     if (err) throw err;
  
-    app.models.CoffeeShop.create([
-      {name: 'Bel Cafe', city: 'Vancouver'},
-      {name: 'Three Bees Coffee House', city: 'San Mateo'},
-      {name: 'Caffe Artigiano', city: 'Vancouver'},
-    ], function(err, coffeeShops) {
+    app.models.Task.create([
+      {name: 'Task A'},
+      {name: 'Task B'},
+      {name: 'Task C'},
+    ], function(err, tasks) {
       if (err) throw err;
  
-      console.log('Models created: \n', coffeeShops);
+      console.log('Models created: \n', tasks);
     });
   });
 };

@@ -29,5 +29,9 @@
   "CoffeeShop": {
     "dataSource": "mysqlDs",
     "public": true
+  },
+  "Task": {
+    "dataSource": "mysqlDs",
+    "public": true
   }
 }
