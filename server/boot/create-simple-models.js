@@ -1,5 +1,5 @@
 module.exports = function(app) {
-  app.dataSources.mysqlDs.automigrate('Task', function(err) {
+  app.dataSources.db.automigrate('Task', function(err) {
     if (err) throw err;
  
     app.models.Task.create([
